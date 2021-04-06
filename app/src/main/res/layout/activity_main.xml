@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            app:srcCompat="?android:attr/textSelectHandle" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="A Friend Of The Enviroment"
+            android:textColor="#0C0B0B"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Style1view"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/edit1"
+            style="@style/editviewstyle" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Style1view"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:text="Age" />
+
+        <EditText
+            android:id="@+id/edit2"
+
+            style="@style/editviewstyle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Style1view"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Gender" />
+
+        <RadioGroup
+            android:id="@+id/groupbo"
+            style="@style/editviewstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:onClick="maleaction"
+                android:text="Male"
+                android:textSize="17dp"
+                android:checked="false"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="maleaction"
+                android:text="Female"
+                android:textSize="17dp"
+                android:checked="false"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/Style1view"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:text="Residential area" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/editviewstyle"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/Style1view"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:text="I Know how harmful plastic bags are to the environment ?" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-400dp"
+            android:layout_marginLeft="-400dp"
+
+            android:layout_marginTop="100dp"
+            android:text="Yes"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="No"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/Style1view"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:text="What prevents you from using environmentally friendly bags ?" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="81dp">
+
+            <EditText
+                android:id="@+id/edit3"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/black"
+            android:onClick="btactio"
+            android:shadowColor="#B8ADAD"
+            android:text="Save"
+            android:textColor="#E4DFDF" />
+    </LinearLayout>
+</LinearLayout>
+
